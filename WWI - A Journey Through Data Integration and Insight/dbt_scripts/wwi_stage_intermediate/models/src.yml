@@ -1,0 +1,25 @@
+version: 2
+
+sources:
+  - name: stage
+    database: WideWorldImportersPurchase
+    schema: stage
+    tables:
+      - name: Suppliers
+      - name: Cities
+      - name: StockItemTransactions
+      - name: CustomerTransactions
+      - name: PaymentMethods
+      - name: PurchaseOrders
+      - name: Countries
+      - name: SupplierTransactions
+      - name: TransactionTypes
+      - name: StockItems
+      - name: Customers
+      - name: PurchaseOrderLines
+      - name: StockItemHoldings
+      - name: StateProvinces
+      - name: Colors
+      - name: DeliveryMethods
+      - name: PackageTypes
+      - name: Invoices

@@ -1,0 +1,25 @@
+version: 2
+
+sources:
+  - name: raw
+    database: WideWorldImportersPurchase
+    schema: stage
+    tables:
+      - name: raw_raw__stream_Suppliers
+      - name: raw_raw__stream_Cities
+      - name: raw_raw__stream_StockItemTransactions
+      - name: raw_raw__stream_CustomerTransactions
+      - name: raw_raw__stream_PaymentMethods
+      - name: raw_raw__stream_PurchaseOrders
+      - name: raw_raw__stream_Countries
+      - name: raw_raw__stream_SupplierTransactions
+      - name: raw_raw__stream_TransactionTypes
+      - name: raw_raw__stream_StockItems
+      - name: raw_raw__stream_Customers
+      - name: raw_raw__stream_PurchaseOrderLines
+      - name: raw_raw__stream_StockItemHoldings
+      - name: raw_raw__stream_StateProvinces
+      - name: raw_raw__stream_Colors
+      - name: raw_raw__stream_DeliveryMethods
+      - name: raw_raw__stream_PackageTypes
+      - name: raw_raw__stream_Invoices

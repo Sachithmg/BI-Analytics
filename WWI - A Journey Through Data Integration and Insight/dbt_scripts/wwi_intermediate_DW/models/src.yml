@@ -1,0 +1,35 @@
+version: 2
+
+sources:
+  - name: intermediate
+    database: WideWorldImportersPurchase
+    schema: intermediate
+    tables:
+      - name: Suppliers
+      - name: Cities
+      - name: StockItemTransactions
+      - name: CustomerTransactions
+      - name: PaymentMethods
+      - name: PurchaseOrders
+      - name: Countries
+      - name: SupplierTransactions
+      - name: TransactionTypes
+      - name: StockItems
+      - name: Customers
+      - name: PurchaseOrderLines
+      - name: StockItemHoldings
+      - name: StateProvinces
+      - name: Colors
+      - name: DeliveryMethods
+      - name: PackageTypes
+      - name: Invoices
+  - name: Dimension
+    database: WideWorldImportersPurchase
+    schema: Dimension
+    tables:
+      - name: Customer
+      - name: Date
+      - name: 'Payment Method'
+      - name: 'Stock Item'
+      - name: Supplier
+      - name: 'Transaction Type'

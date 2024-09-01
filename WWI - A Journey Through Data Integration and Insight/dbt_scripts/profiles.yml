@@ -1,0 +1,67 @@
+wwi_purchase:
+  target: dev
+  outputs:
+    dev:
+      type: sqlserver
+      driver: 'ODBC Driver 17 for SQL Server'
+      server: SACHITH-DESKTOP
+      port: 1433
+      database: WideWorldImportersPurchase
+      schema: stage
+      user: sa
+      password: 
+      threads: 4
+      TrustServerCertificate: True  # Add this line
+wwi_raw_stage:
+  target: dev
+  outputs:
+    dev:
+      type: sqlserver
+      driver: 'ODBC Driver 17 for SQL Server'
+      server: SACHITH-DESKTOP
+      port: 1433
+      database: WideWorldImportersPurchase
+      schema: stage
+      user: sa
+      password: 
+      threads: 4
+      TrustServerCertificate: True  # Add this line
+wwi_stage_intermediate:
+  target: silver
+  outputs:
+    silver:
+      type: sqlserver
+      driver: 'ODBC Driver 17 for SQL Server'
+      server: SACHITH-DESKTOP
+      port: 1433
+      database: WideWorldImportersPurchase
+      schema: intermediate
+      user: sa
+      password: 
+      threads: 4
+      TrustServerCertificate: True  # Add this line
+wwi_intermediate_DW:
+  target: gold_fact
+  outputs:
+    gold_dim:
+      type: sqlserver
+      driver: 'ODBC Driver 17 for SQL Server'
+      server: SACHITH-DESKTOP
+      port: 1433
+      database: WideWorldImportersPurchase
+      schema: Dimension
+      user: sa
+      password: 
+      threads: 4
+      TrustServerCertificate: True  # Add this line
+    gold_fact:
+      type: sqlserver
+      driver: 'ODBC Driver 17 for SQL Server'
+      server: SACHITH-DESKTOP
+      port: 1433
+      database: WideWorldImportersPurchase
+      schema: Fact
+      user: sa
+      password: 
+      threads: 4
+      TrustServerCertificate: True  # Add this line
